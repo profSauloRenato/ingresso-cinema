@@ -1,5 +1,9 @@
+<div class="form-floating my-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="Pesquise aqui...">
+    <label for="floatingInput">Pesquisar</label>
+</div>
 <div class="d-flex flex-wrap justify-content-evenly">
-    <div class="card my-5" style="width: 18%;" *ngFor="let movie of movies">
+    <div class="card" *ngFor="let movie of movies">
         <div class="d-flex justify-content-center" style="width: 100%">
             <img src="{{ movie.image }}" class="card-img-top w-75" alt="...">
         </div>

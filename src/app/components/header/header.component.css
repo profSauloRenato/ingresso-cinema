@@ -1,0 +1,7 @@
+#navbarSupportedContent {
+    display: flex;
+}
+
+#navbarSupportedContent img {
+    width: 230px;
+}

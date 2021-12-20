@@ -24,3 +24,15 @@
     left: 50px;
     text-decoration: none;
 }
+
+@media (max-width: 991.98px) {
+    .col-2{
+        width: 30%;
+    }
+}
+
+@media (max-width: 449.98px) {
+    .col-2{
+        width: 40%;
+    }
+}
