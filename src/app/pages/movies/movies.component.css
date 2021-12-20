@@ -1,0 +1,8 @@
+.card-title {
+    min-height: 65px;
+    font-size: 18px;
+}
+
+.card-body .d-flex {
+    min-height: 42px;
+}

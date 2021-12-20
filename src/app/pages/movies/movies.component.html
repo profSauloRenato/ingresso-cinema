@@ -1,0 +1,14 @@
+<div class="d-flex flex-wrap justify-content-evenly">
+    <div class="card my-5" style="width: 18%;" *ngFor="let movie of movies">
+        <div class="d-flex justify-content-center" style="width: 100%">
+            <img src="{{ movie.image }}" class="card-img-top w-75" alt="...">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ movie.title }}</h5>
+            <div class="d-flex">
+                <p class="card-text" *ngFor="let genre of movie.genres"> {{ genre }} - </p>
+            </div>
+            <a routerLink="/theater" class="btn btn-dark col-12" [routerLink]="['/theater', movie.id]" (click)="getTheaters(movie.id)" >Comprar</a>
+        </div>
+    </div>
+</div>

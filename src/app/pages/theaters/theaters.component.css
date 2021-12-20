@@ -1,0 +1,26 @@
+.theater {
+    background-color: #F1F3F4;
+}
+
+.theaterName {
+    border-bottom: 1px solid #aaa;
+}
+
+.room {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.room span {
+    font-weight: normal;
+    color: #FF7300DD;
+}
+
+.back{
+    font-size: 50px;
+    color: #fff;
+    position: fixed;
+    top: 2px;
+    left: 50px;
+    text-decoration: none;
+}

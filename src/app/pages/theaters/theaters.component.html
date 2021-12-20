@@ -1,0 +1,27 @@
+<a class="back" routerLink="/">&lsaquo;</a>
+<div 
+*ngFor="let movie of movies" class="d-flex flex-column justify-content-center w-100 mx-auto"
+[ngStyle]="{height: movie.id !== movieId ? '0' : 'auto'}"
+>
+    <img *ngIf="movie.id == movieId" src="{{movie.image}}" alt="{{movie.title}}" class="col-2 mx-auto my-3">
+    <div class="mt-2">
+        <h2 *ngIf="movie.id == movieId" class="ms-4">{{movie.title}}</h2>
+    </div>
+</div>
+<div *ngFor="let theater of theaters" class="col-12 mt-3 p-3 theater">
+    <div class="theaterName">
+        <h3>{{theater.name}}</h3>
+        <p>{{theater.address}}, {{theater.addressComplement}}</p>
+    </div>
+    <div class="mt-3">
+        <p *ngFor="let room of rooms" class="room">{{room.name}} - <span *ngFor="let room of rooms" >{{room.types}} </span></p>
+        <div class="btnHour">
+            <button *ngFor="let session of sessions" type="button" class="btn btn-outline-primary mx-2" routerLink="/register">
+                {{session.time}}
+            </button>
+            <button *ngFor="let session of sessions" type="button" class="btn btn-outline-primary mx-2" routerLink="/register">
+                {{session.time}}
+            </button>
+        </div>
+    </div>
+</div>
